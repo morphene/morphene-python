@@ -1,0 +1,20 @@
+[run]
+branch = True
+source =
+    morphenepython/
+    morphenepythonbase/
+    morphenepythonapi/
+    morphenepythongraphenebase/
+omit = 
+     */.eggs/*
+     */.tox/*
+
+[report]
+omit = 
+     */.eggs/*
+     */.tox/*
+
+[paths]
+source =
+    .tox/*/lib/python*/site-packages/morphenepython
+    .tox/pypy/site-packages/morphenepython
