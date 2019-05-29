@@ -39,6 +39,8 @@ def get_query(request_id, api_name, name, args):
                  "id": request_id}
         request_id += 1
     else:
+        if not api_name:
+            api_name = "database_api"
         query = {"method": api_name + "." + name,
                  "jsonrpc": "2.0",
                  "params": [],

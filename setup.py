@@ -16,7 +16,7 @@ except LookupError:
     ascii = codecs.lookup('ascii')
     codecs.register(lambda name, enc=ascii: {True: enc}.get(name == 'mbcs'))
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 tests_require = ['mock >= 2.0.0', 'pytest', 'pytest-mock', 'parameterized']
 
@@ -67,7 +67,6 @@ if __name__ == '__main__':
         name='morphenepython',
         version=VERSION,
         description='Official Python library for the Morphene Blockchain',
-        long_description=get_long_description(),
         download_url='https://github.com/morphene/morphene-python/tarball/' + VERSION,
         author='Andrew Chaney',
         author_email='andrew@boonedevelopment.com',
