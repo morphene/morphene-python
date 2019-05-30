@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 import logging
 import json
 from .instance import shared_morphene_instance
-from morphenepython.constants import state_object_size_info, resource_execution_time, EXEC_FOLLOW_CUSTOM_OP_SCALE
+from morphenepython.constants import state_object_size_info, resource_execution_time
 import hashlib
 from binascii import hexlify, unhexlify
 import os
